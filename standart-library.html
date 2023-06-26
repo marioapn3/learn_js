@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Number</title>
+
+</head>
+
+<body>
+     <script>
+          //Standart Library Number
+          const input = "12345";
+          const number = Number(input);
+
+          console.info(typeof input);
+          console.info(typeof number);
+          console.info(number);
+
+          console.info(Number("salah"));
+
+          //STATIC PROPERTIES
+          console.info(Number.MIN_VALUE);
+          console.info(Number.MAX_VALUE);
+          console.info(Number.MIN_SAFE_INTEGER);
+          console.info(Number.MAX_SAFE_INTEGER);
+
+          //STATIC METHOD
+          const checkData = Number("1234");
+          console.info(Number.isInteger(checkData));
+          console.info(Number.isNaN(checkData));
+
+          //NUMBER INSTANCE METHOD
+          const value = Number("1234");
+          console.info(value.toString(2));
+          console.info(value.toLocaleString("id-ID"));
+
+          //Standart Library String
+          const name = "Mario Aprilnino";
+          console.info(name.length);
+          console.info(name.toLowerCase());
+          console.info(name.toUpperCase());
+          console.info(name.split(" "));
+
+          const UserInput = "        Test        Mario ";
+          console.info(UserInput.trim());
+     </script>
+</body>
+
+</html>
